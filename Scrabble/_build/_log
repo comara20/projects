@@ -1,0 +1,28 @@
+### Starting build.
+# Target: boarddraw.ml.depends, tags: { extension:ml, file:boarddraw.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamldep.opt -modules boarddraw.ml > boarddraw.ml.depends # cached
+# Target: board.ml.depends, tags: { extension:ml, file:board.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamldep.opt -modules board.ml > board.ml.depends # cached
+# Target: permHelp.ml.depends, tags: { extension:ml, file:permHelp.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamldep.opt -modules permHelp.ml > permHelp.ml.depends # cached
+# Target: permHelp.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:permHelp.cmo, file:permHelp.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o permHelp.cmo permHelp.ml # cached
+# Target: tile.mli.depends, tags: { extension:mli, file:tile.mli, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamldep.opt -modules tile.mli > tile.mli.depends # cached
+# Target: words.ml.depends, tags: { extension:ml, file:words.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamldep.opt -modules words.ml > words.ml.depends # cached
+# Target: words.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:words.cmo, file:words.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o words.cmo words.ml # cached
+# Target: tile.cmi, tags: { byte, compile, extension:mli, file:tile.mli, interf, ocaml, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o tile.cmi tile.mli # cached
+# Target: board.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:board.cmo, file:board.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o board.cmo board.ml # cached
+# Target: boarddraw.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:boarddraw.cmo, file:boarddraw.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o boarddraw.cmo boarddraw.ml # cached
+# Target: tile.ml.depends, tags: { extension:ml, file:tile.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamldep.opt -modules tile.ml > tile.ml.depends # cached
+# Target: tile.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:tile.cmo, file:tile.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt -c -thread -strict-sequence -w A-4-33-40-41-42-43-34-44 -o tile.cmo tile.ml # cached
+# Target: boarddraw.byte, tags: { byte, dont_link_with, extension:byte, file:boarddraw.byte, link, ocaml, program, quiet, strict-sequence, thread, traverse, use_graphics, use_str, use_unix, warn(A-4-33-40-41-42-43-34-44) }
+/Users/comara/.opam/4.02.3/bin/ocamlc.opt unix.cma str.cma graphics.cma -thread threads.cma permHelp.cmo words.cmo tile.cmo board.cmo boarddraw.cmo -o boarddraw.byte # cached
+# Compilation successful.
