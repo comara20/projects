@@ -1,0 +1,28 @@
+Our game of checkers follows the acceptance rules of the game. It is intended
+to be played by a single player against the "computer." 
+
+From the CS50 IDE page, the user should cd in to the "final_project" directory
+and run flask and navigate to the Web Server Option in the upper left-hand corner.
+Our checkers game will then appear
+
+In the upper left-hand corner of our page, the user has the option to log in 
+to his or her Google Account. This functionality will allow the user to keep 
+track of past games and scores stored in a sequel database. The user can 
+log out at any time using the button at the bottom of the page.
+
+When the user wants to play, he or she must click on the piece to move followed
+by the location to which the user wants to move the piece. The user must 
+complete all possible jumps before the user's turn is complete. The computer
+subsequently chooses its most efficient move. When the computer has moved 
+a piece, it is the turn of the user once again.
+
+The exact rules of the game are linked to the page for user's reference. For example,
+when the user has the option to jump over an opposite player's piece, it must jump over
+that piece. If there are multiple opponent pieces that the user can jump over, then
+the user has the choice of which opponent piece to jump over. In addition, when a "double",
+or consecutive, move is available, the user must make the consecutive jump.
+
+The game keeps track of the score for each player. The user's scores are positive,
+and the computer's scores are negative. The game is over when one of the users runs out
+of checkers to play with, or has no possible moves left. The game will alert the user
+when the game is over and when a player has won.

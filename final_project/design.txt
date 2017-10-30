@@ -1,0 +1,42 @@
+***canvas implementation of board***
+
+The user's regular pieces were assigned a value of 3, and the user's king
+pieces were assigned a value of 4. The computer's regular pieces were 
+assigned a value of 1, and the computer's king pieces were assigned a 
+a value of 2, with the user treated as player 2 throughout implementation,
+and the computer as player 1.These values especially came into play when checking all the 
+possible moves on the board at a given time, given that kings can move
+forward and backward, whereas regular pieces can only move in one direction.
+
+
+These values are stored in an 8x8 array called mainBoard in scripts.js
+In our index.html we use canvas to create a 500x500 pixel surface on which to draw a checkerboard.
+We use our function drawBoard, which loops through to create an 8x8 square board on the HTML
+canvas. In addition, we call drawPieces, which initializes the square (lol) checkers and
+displays them on the canvas.
+
+The function jump_possible() return an array of all the possible
+moves that a selected checker can make. The function jump_possible() uses the values mentioned
+above to see if the move that the selected checker is trying to make is a valid move
+by the rules of checkers.
+
+The main function that our program runs on is executeTurn(), which checks through
+possibleMoves to make sure that the move the user is trying to make is legal. If it is,
+then the code will makeMove() and move the piece, and in response, the AI will then
+calculate the best move to make next and then make a move, in which then it is the user's
+turn again.
+Within the AI, we use the recursive function possibleContinues() to look
+ahead for all future possible states of the board and assign scores to each using the
+minMax algorithm with alpha-beta pruning to reduce redundancy in our search tree.
+Our static get value function is accessed after a depth 9 search has been completed,
+and assigns a score based onthe number of pieces on the board, with a higher score
+is a better move for player1, which is the computer. Based on that,the game selects
+sthe highest possible score in the array of moves of possibleContinues().
+
+For more information on the minMax algorithm, see https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
+
+Our game will run through executeTurn() until one of the players win, based on the function
+hasWon(), which will return 1 if player1 (aka the computer) has won, 2 if player2 (the user)
+has won, and 0 if the game is not won. Once the game is won, then the board reloads
+and sets to the original configuration, and the game restarts again.
+

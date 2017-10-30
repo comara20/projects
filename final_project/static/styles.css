@@ -1,0 +1,27 @@
+h2
+/*create event title*/
+{
+    font-family: 'Spinnaker', sans-serif;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+.feed-sheet {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+}
+
+p {
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
