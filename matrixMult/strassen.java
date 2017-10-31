@@ -20,10 +20,10 @@ public class strassen
 		else if (args[0].equals("1"))
 		{
 			Random rand = new Random();
-			int[][] tester = new int[Integer.parseInt(args[1])][Integer.parseInt(args[1])];
-			for (int i = 0; i < Integer.parseInt(args[1]); i++)
+			int[][] tester = new int[2000][2000];
+			for (int i = 0; i < 2000; i++)
 			{
-				for (int x = 0; x < Integer.parseInt(args[1]); x++)
+				for (int x = 0; x < 2000; x++)
 				{
 					tester[i][x] = rand.nextInt(3);
 					if (tester[i][x] == 2)
@@ -33,8 +33,16 @@ public class strassen
 				}
 			}
 			//printMat(tester);
+			long time0 = System.nanoTime();
 			int[][] result = strass2n(tester, tester, new int[tester.length][tester.length], 0);
-			for (int i = 0; i < result.length; i++)
+			//int[][] result = mult(tester,tester);
+			System.out.print("Strassen time: ");
+			System.out.println((System.nanoTime()-time0)/1e9);
+			time0=System.nanoTime();
+			int[][] result2 = mult(tester,tester);
+			System.out.print("Standard time: ");
+			System.out.println((System.nanoTime()-time0)/1e9);
+			/*for (int i = 0; i < result.length; i++)
 			{
 				System.out.println(result[i][i]);
 			}
@@ -54,17 +62,17 @@ public class strassen
 					}
 				}
 				System.out.println("check");
-			}
-			System.out.print("done");
+			}*/
+			System.out.println("done");
 			//printMat(mult(tester, tester, new int[tester.length][tester.length]));
-			int[][] tester1 = new int[Integer.parseInt(args[1])][Integer.parseInt(args[1])];
+			/*int[][] tester1 = new int[Integer.parseInt(args[1])][Integer.parseInt(args[1])];
 			for (int i = 0; i < Integer.parseInt(args[1]); i++)
 			{
 				for (int x = 0; x < Integer.parseInt(args[1]); x++)
 				{
 					tester1[i][x] = i - x;
 				}
-			}
+			}*/
 			
 		}
 		else if (args[0].equals("2"))
