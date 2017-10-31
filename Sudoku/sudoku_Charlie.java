@@ -81,7 +81,7 @@ public class sudoku_Charlie{
 		}
 		return true;
 	}
-	//Darby code that she didn't comment because she is a delinquent
+	
     public static void readpuzzle(int[][] board, String name){
 		//Scanner s = new Scanner(System.in);
 		//Scanner s = new Scanner(name);
@@ -102,7 +102,7 @@ public class sudoku_Charlie{
             catch(IOException ex) {}
         
 	}
-	//Darby code that she didn't comment because she is a delinquent
+
 	public static int[][] copy(int[][] input){
 
 		int[][] output = new int[input[0].length][input[0].length];
@@ -114,7 +114,7 @@ public class sudoku_Charlie{
 		return output;
 	}
 
-	//Darby code that she didn't comment because she is a delinquent
+
 	public static void print(int[][] input){
 		for(int i=0; i<input[0].length; i++){
 			for(int j=0; j<input[0].length; j++){
