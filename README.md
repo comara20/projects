@@ -5,3 +5,5 @@ ghost: Run with "java ghost" in terminal. Make sure usa.txt is in the same direc
 matrixMult: Implemention of Strassen algorithm for matrix multiplication which is O(n^(log7)) = O(n^2.8). Performs standard matrix multiplication on matrices small enough such that Strassen's is actually slower. Run with "java strassen 1". Squares 2000x2000 random matrix, and output time to do so with strassen and with standard O(n^3) algorithm.
 
 sudoku: Implementation to of a recursive algorithm to solve sudoku puzzles. Run with "java sudoku_Charlie" with sudokufile2.txt in the same directory.
+
+final_project: final project is a checkers AI written in javascript and python. 
